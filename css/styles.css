@@ -3785,7 +3785,7 @@ img.u-pull-left {
  * ## modal popup
  * ------------------------------------------------------------------- */
 .modal-popup {
-  max-width: 680px;
+  width: 70vw;
   background-color: white;
   font-size: calc(var(--text-size) * 0.9447);
   line-height: var(--vspace-0_875);
@@ -3809,6 +3809,8 @@ img.u-pull-left {
 }
 
 .modal-popup__desc {
+  max-height: 50vh;
+  overflow-y: scroll;
   padding: 0 var(--vspace-1_25) var(--vspace-0_25);
 }
 
@@ -3849,21 +3851,61 @@ img.u-pull-left {
   display: none;
 }
 
-.modal-popup__details {
-  background-color: rgba(0, 0, 0, 0.3);
+.modal-popup__header {
+  background-size: cover !important;
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+/* Modal project images */
+.modal-01__img {
+  background: url(../images/portfolio/movie-list-screenshot.png) no-repeat
+    center center;
+}
+
+.modal-02__img {
+  background: url(../images/portfolio/weather-app-screenshot.png) no-repeat
+    center center;
+}
+
+.modal-03__img {
+  background: url(../images/portfolio/nimbus-hotel-screenshot.png) no-repeat
+    center center;
+}
+
+/* Modal links */
+
+.modal-popup__header-link:not(:last-of-type) {
+  margin-right: 2rem;
+}
+
+.modal-popup__header-link {
+  height: fit-content;
+
+  background-color: var(--color-1);
+  box-shadow: 0 15px 20px hsla(205, 0%, 0%, 1);
   font-size: var(--text-xs);
   line-height: var(--vspace-1_25);
   color: white;
-  padding: 0 1.2rem;
-  position: absolute;
-  top: var(--vspace-1);
-  left: var(--vspace-1);
+
+  padding: 1rem 1.2rem;
+
+  transition: box-shadow 0.2s ease;
 }
 
-.modal-popup__details:focus,
-.modal-popup__details:hover {
-  background-color: var(--color-body);
+.modal-popup__header-link:focus,
+.modal-popup__header-link:hover {
+  background-color: rgb(105, 5, 4);
+  box-shadow: 0 15px 10px hsla(205, 0%, 0%, 1);
+  transform: scale(1.1);
   color: white;
+}
+.modal-popup__header-link:active {
+  box-shadow: 0 8px 10px hsla(205, 0%, 0%, 1);
 }
 
 /* ------------------------------------------------------------------- 
