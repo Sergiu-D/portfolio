@@ -3861,6 +3861,10 @@ img.u-pull-left {
   min-height: 50vh;
 }
 
+.modal-popup__header-links {
+  display: flex;
+}
+
 /* Modal project images */
 .modal-01__img {
   background: url(../images/portfolio/movie-list-screenshot.png) no-repeat
@@ -3884,22 +3888,63 @@ img.u-pull-left {
 }
 
 .modal-popup__header-link {
-  height: fit-content;
+  display: flex;
+  align-items: center;
+  width: fit-content;
 
   background-color: var(--color-1);
+  border-radius: 5px;
   box-shadow: 0 15px 20px hsla(205, 0%, 0%, 1);
-  font-size: var(--text-xs);
-  line-height: var(--vspace-1_25);
+
+  /* line-height: var(--vspace-1_25); */
   color: white;
 
+  font-size: 2rem;
   padding: 1rem 1.2rem;
 
-  transition: box-shadow 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.modal-popup__header-icons {
+  position: relative;
+
+  width: 2rem;
+  height: 2rem;
+
+  margin-right: 1rem;
+  overflow: hidden;
+}
+
+.modal-popup__header-icons i {
+  position: absolute;
+
+  transition: top 0.3s ease-in-out, opacity 0.4s ease-in;
+}
+
+.modal-popup__header-icons i:first-of-type {
+  top: 0;
+  opacity: 1;
+}
+
+.modal-popup__header-icons i:last-of-type {
+  top: -50px;
+  opacity: 0;
+}
+
+.modal-popup__header-link:hover i:first-of-type {
+  top: 50px;
+  opacity: 0;
+}
+
+.modal-popup__header-link:hover i:last-of-type {
+  top: 0;
+  opacity: 1;
 }
 
 .modal-popup__header-link:focus,
 .modal-popup__header-link:hover {
-  background-color: rgb(105, 5, 4);
+  background-color: var(--color-gray-10);
+
   box-shadow: 0 15px 10px hsla(205, 0%, 0%, 1);
   transform: scale(1.1);
   color: white;
@@ -3907,6 +3952,11 @@ img.u-pull-left {
 .modal-popup__header-link:active {
   box-shadow: 0 8px 10px hsla(205, 0%, 0%, 1);
 }
+
+/* .modal-popup__header-link i {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+} */
 
 /* ------------------------------------------------------------------- 
  * ## testimonials
@@ -4110,6 +4160,9 @@ img.u-pull-left {
 }
 
 .contact-bottom {
+  flex-direction: column;
+  align-items: center;
+
   padding-bottom: var(--vspace-3);
   margin-top: var(--vspace-3);
   border-bottom: 1px solid var(--color-border);
@@ -4117,6 +4170,10 @@ img.u-pull-left {
 
 .contact-bottom .text-pretitle {
   margin-bottom: var(--vspace-0_125);
+}
+
+.contact-block {
+  text-align: center;
 }
 
 .contact-links,
