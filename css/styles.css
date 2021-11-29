@@ -3785,7 +3785,7 @@ img.u-pull-left {
  * ## modal popup
  * ------------------------------------------------------------------- */
 .modal-popup {
-  width: 70vw;
+  width: 60vw;
   background-color: white;
   font-size: calc(var(--text-size) * 0.9447);
   line-height: var(--vspace-0_875);
@@ -3853,12 +3853,13 @@ img.u-pull-left {
 
 .modal-popup__header {
   background-size: cover !important;
+  background-position: top center !important;
   position: relative;
   display: flex;
   /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 35vh;
 }
 
 .modal-popup__header-links {
@@ -3867,8 +3868,7 @@ img.u-pull-left {
 
 /* Modal project images */
 .modal-01__img {
-  background: url(../images/portfolio/movie-list-screenshot.png) no-repeat
-    center center;
+  background: url(../images/portfolio/movie-list-screenshot.png) no-repeat;
 }
 
 .modal-02__img {
@@ -3894,7 +3894,7 @@ img.u-pull-left {
 
   background-color: var(--color-1);
   border-radius: 5px;
-  box-shadow: 0 15px 20px hsla(205, 0%, 0%, 1);
+  box-shadow: 0 0 35px hsla(205, 0%, 0%, 1);
 
   /* line-height: var(--vspace-1_25); */
   color: white;
@@ -3945,7 +3945,7 @@ img.u-pull-left {
 .modal-popup__header-link:hover {
   background-color: var(--color-gray-10);
 
-  box-shadow: 0 15px 10px hsla(205, 0%, 0%, 1);
+  box-shadow: 0 0 15px hsla(205, 0%, 0%, 1);
   transform: scale(1.1);
   color: white;
 }
@@ -4111,11 +4111,6 @@ img.u-pull-left {
 }
 
 @media screen and (max-width: 400px) {
-  .folio-list .column {
-    flex: none;
-    width: 50%;
-  }
-
   .folio-list__item {
     margin-bottom: 0;
   }
@@ -4132,11 +4127,6 @@ img.u-pull-left {
     max-width: 100%;
     width: 100%;
     height: auto;
-  }
-
-  .folio-list__item-text,
-  .folio-list__proj-link {
-    display: none;
   }
 
   .modal-popup__desc {
