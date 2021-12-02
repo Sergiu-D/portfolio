@@ -1,328 +1,282 @@
 <!DOCTYPE html>
 <html class="no-js ss-preload" lang="en">
-  <head>
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8" />
-    <title>Sergiu's portfolio</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <!-- mobile specific metas
+<head>
+  <!--- basic page needs
     ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>Sergiu's portfolio</title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- CSS
+  <!-- mobile specific metas
     ================================================== -->
-    <link rel="stylesheet" href="css/vendor.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Icons
+  <!-- CSS
     ================================================== -->
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- favicons
+  <!-- Icons
     ================================================== -->
-    
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
-    <link rel="manifest" href="site.webmanifest" />
-  </head>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-  <body id="top">
-    <!-- # preloader
+  <!-- favicons
     ================================================== -->
-    <div id="preloader">
-      <div id="loader"></div>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC5ZYHFG5W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-MC5ZYHFG5W');
+  </script>
+</head>
+
+<body id="top">
+  <!-- # preloader
+    ================================================== -->
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+  <!-- # page wrap
+    ================================================== -->
+  <div class="s-pagewrap">
+    <div class="circles">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
-    <!-- # page wrap
-    ================================================== -->
-    <div class="s-pagewrap">
-      <div class="circles">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+    <!-- ## site header 
+        ================================================== -->
+    <header class="s-header">
+      <div class="header-mobile">
+        <span class="mobile-home-link"><a href="index.html">Luther.</a></span>
+        <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
       </div>
 
-      <!-- ## site header 
-        ================================================== -->
-      <header class="s-header">
-        <div class="header-mobile">
-          <span class="mobile-home-link"><a href="index.html">Luther.</a></span>
-          <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
-        </div>
+      <div class="row wide main-nav-wrap">
+        <nav class="column lg-12 main-nav">
+          <ul>
+            <!-- <li><a href="index.html" class="home-link">Luther.</a></li> -->
+            <li class="current">
+              <a href="#intro" class="smoothscroll">Intro</a>
+            </li>
+            <li><a href="#about" class="smoothscroll">About</a></li>
+            <li><a href="#works" class="smoothscroll">Works</a></li>
+            <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end s-header -->
 
-        <div class="row wide main-nav-wrap">
-          <nav class="column lg-12 main-nav">
-            <ul>
-              <!-- <li><a href="index.html" class="home-link">Luther.</a></li> -->
-              <li class="current">
-                <a href="#intro" class="smoothscroll">Intro</a>
-              </li>
-              <li><a href="#about" class="smoothscroll">About</a></li>
-              <li><a href="#works" class="smoothscroll">Works</a></li>
-              <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <!-- end s-header -->
-
-      <!-- ## main content
+    <!-- ## main content
         ==================================================- -->
-      <main class="s-content">
-        <!-- ### intro
+    <main class="s-content">
+      <!-- ### intro
             ================================================== -->
-        <section id="intro" class="s-intro target-section">
-          <div class="row intro-content wide">
-            <div class="column">
-              <div class="text-pretitle with-line">Hello World</div>
+      <section id="intro" class="s-intro target-section">
+        <div class="row intro-content wide">
+          <div class="column">
+            <div class="text-pretitle with-line">Hello World</div>
 
-              <h1 class="text-huge-title">
-                I am Sergiu, <br />
-                a frontend <br />
-                developer based <br />
-                in Romania.
-              </h1>
-            </div>
+            <h1 class="text-huge-title">
+              I am Sergiu, <br />
+              a frontend <br />
+              developer based <br />
+              in Romania.
+            </h1>
+          </div>
 
-            <ul class="intro-social">
-              <li><a href="#0">linkedin</a></li>
-              <li><a href="#0">Github</a></li>
-              <!-- <li><a href="#0">Dribbble</a></li>
+          <ul class="intro-social">
+            <li><a href="#0">linkedin</a></li>
+            <li><a href="#0">Github</a></li>
+            <!-- <li><a href="#0">Dribbble</a></li>
                         <li><a href="#0">Instagram</a></li> -->
-            </ul>
-          </div>
-          <!-- end intro content -->
+          </ul>
+        </div>
+        <!-- end intro content -->
 
-          <a href="#about" class="intro-scrolldown smoothscroll">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-            >
-              <path
-                d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"
-              />
-            </svg>
-          </a>
-        </section>
-        <!-- end s-intro -->
+        <a href="#about" class="intro-scrolldown smoothscroll">
+          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+            clip-rule="evenodd">
+            <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
+          </svg>
+        </a>
+      </section>
+      <!-- end s-intro -->
 
-        <!-- ### about
+      <!-- ### about
             ================================================== -->
-        <section id="about" class="s-about target-section">
-          <div class="row about-info wide" data-animate-block>
-            <div class="column lg-6 md-12">
-              <div class="about-info__text">
-                <h2 class="text-pretitle with-line" data-animate-el>About</h2>
-                <p class="attention-getter" data-animate-el>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-                <!-- <a href="#0" class="btn btn--medium u-fullwidth" data-animate-el>Download CV</a> -->
-              </div>
-            </div>
+      <section id="about" class="s-about target-section">
+        <div class="row about-info wide" data-animate-block>
+          <div class="column lg-6 md-12">
+            <div class="about-info__text">
+              <h2 class="text-pretitle with-line" data-animate-el>About</h2>
+              <p class="attention-getter" data-animate-el>
+                I am a very passionate self- taught front-end developer based in Romania. I have always had a strong
+                curiosity towards
+                technology, which later translated into finding ways to make websites easier to use, from a consumer’s
+                perspective,
+                hence, my fascination with front-end development, which made me want a career in this field.
+                I am hard working person, I like to pay attention to every single aspect of my work and many people
+                around me say I am a
+                perfectionist.</br></br>
+                I am a punctual, responsible and reliable person, who likes professional challenges as they help me
+                learn and improve my
+                skills.
+                Outside work, I am easy-going, I enjoy spending time with my friends, I like to cook, listen to music
+                and watch
+                documentaries.
 
-            <div class="column lg-6 md-12 about-info__pic-block">
-              <img
-                src="images/skills-bg.png"
-                class="about-info__pic"
-                data-animate-el
-              />
+              </p>
+              <!-- <a href="#0" class="btn btn--medium u-fullwidth" data-animate-el>Download CV</a> -->
             </div>
           </div>
-          <!-- about-info -->
 
-         
+          <div class="column lg-6 md-12 about-info__pic-block">
+            <img src="images/skills-bg.png" class="about-info__pic" data-animate-el />
+          </div>
+        </div>
+        <!-- about-info -->
 
-          <div class="row about-timelines" data-animate-block>
-            <div class="column lg-12 tab-12">
-              <h2 class="text-pretitle" data-animate-el>Skills</h2>
 
-              <div class="row" data-animate-block>
-                <div class="skill-card skill-html" data-animate-el>
-                  <i class="fab fa-html5"></i>
-                  <p>HTML5</p>
-                </div>
-                <div class="skill-card skill-css" data-animate-el>
-                  <i class="fab fa-css3-alt"></i>
-                  <p>CSS3</p>
-                </div>
-                <div class="skill-card skill-sass" data-animate-el>
-                  <i class="fab fa-sass"></i>
-                  <p>SASS/SCSS</p>
-                </div>
-                <div class="skill-card skill-js" data-animate-el>
-                  <i class="fab fa-js"></i>
-                  <p>Vanilla JavaScript</p>
-                </div>
 
-                <div class="skill-card skill-react" data-animate-el>
-                  <i class="fab fa-react"></i>
-                  <p>React.js</p>
-                </div>
-                <div class="skill-card skill-npm" data-animate-el>
-                  <i class="fab fa-npm"></i>
-                  <p>NPM</p>
-                </div>
-                <div class="skill-card skill-git" data-animate-el>
-                  <i class="fab fa-git-alt"></i>
-                  <p>Git</p>
-                </div>
-                <div class="skill-card skill-mu" data-animate-el>
-                  <div class="img-shadow">
-                    <img
-                      src="./images/material-ui-logo.png"
-                      alt="material-ui logo"
-                    />
-                  </div>
-                  <p>Material-UI</p>
-                </div>
+        <div class="row about-timelines" data-animate-block>
+          <div class="column lg-12 tab-12">
+            <h2 class="text-pretitle" data-animate-el>Skills</h2>
+
+            <div class="row" data-animate-block>
+              <div class="skill-card skill-html" data-animate-el>
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
               </div>
-              
+              <div class="skill-card skill-css" data-animate-el>
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+              </div>
+              <div class="skill-card skill-sass" data-animate-el>
+                <i class="fab fa-sass"></i>
+                <p>SASS/SCSS</p>
+              </div>
+              <div class="skill-card skill-js" data-animate-el>
+                <i class="fab fa-js"></i>
+                <p>Vanilla JavaScript</p>
+              </div>
+
+              <div class="skill-card skill-react" data-animate-el>
+                <i class="fab fa-react"></i>
+                <p>React.js</p>
+              </div>
+              <div class="skill-card skill-npm" data-animate-el>
+                <i class="fab fa-npm"></i>
+                <p>NPM</p>
+              </div>
+              <div class="skill-card skill-git" data-animate-el>
+                <i class="fab fa-git-alt"></i>
+                <p>Git</p>
+              </div>
+              <div class="skill-card skill-mu" data-animate-el>
+                <div class="img-shadow">
+                  <img src="./images/material-ui-logo.png" alt="material-ui logo" />
+                </div>
+                <p>Material-UI</p>
+              </div>
+            </div>
+
           </div>
           <!-- end about-timelines -->
-        </section>
-        <!-- end s-about -->
+      </section>
+      <!-- end s-about -->
 
-        <!-- ### works
+      <!-- ### works
             ================================================== -->
-        <section id="works" class="s-works target-section">
-          <div class="row works-portfolio">
-            <div class="column lg-12" data-animate-block>
-              <h2 class="text-pretitle" data-animate-el>Recent Works</h2>
-              <p class="h1" data-animate-el>
-                Here are some of my favorite projects I have done lately. Feel
-                free to check them out.
-              </p>
+      <section id="works" class="s-works target-section">
+        <div class="row works-portfolio">
+          <div class="column lg-12" data-animate-block>
+            <h2 class="text-pretitle" data-animate-el>Recent Works</h2>
+            <p class="h1" data-animate-el>
+              Here are some of my favorite projects I have done lately. Feel
+              free to check them out.
+            </p>
 
-              <ul class="folio-list row block-lg-one-half block-stack-on-1000">
-                <li class="folio-list__item column" data-animate-el>
-                  <a class="folio-list__item-link" href="#modal-01">
-                    <div class="folio-list__item-pic">
-                      <img src="images/portfolio/movie-list-screenshot.png" alt="movie-list" />
-                    </div>
+            <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+              <li class="folio-list__item column" data-animate-el>
+                <a class="folio-list__item-link" href="#modal-01">
+                  <div class="folio-list__item-pic">
+                    <img src="images/portfolio/movie-list-screenshot.png" alt="movie-list" />
+                  </div>
 
-                    <div class="folio-list__item-text">
-                      <div class="folio-list__item-cat">React JS</div>
-                      <div class="folio-list__item-title">Movie list</div>
-                    </div>
-                  </a>
-                  <a
-                    class="folio-list__proj-link"
-                    href="#"
-                    title="Movie list"
-                  >
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                        fill="currentColor"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </a>
-                </li>
-                <!--end folio-list__item -->
+                  <div class="folio-list__item-text">
+                    <div class="folio-list__item-cat">React JS</div>
+                    <div class="folio-list__item-title">Movie list</div>
+                  </div>
+                </a>
+                <a class="folio-list__proj-link" href="#" title="Movie list">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                      fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </li>
+              <!--end folio-list__item -->
 
-                <li class="folio-list__item column" data-animate-el>
-                  <a class="folio-list__item-link" href="#modal-02">
-                    <div class="folio-list__item-pic">
-                      <img
-                        src="images/portfolio/weather-app-screenshot.png"
-                        
-                        alt="weather-app"
-                      />
-                    </div>
+              <li class="folio-list__item column" data-animate-el>
+                <a class="folio-list__item-link" href="#modal-02">
+                  <div class="folio-list__item-pic">
+                    <img src="images/portfolio/weather-app-screenshot.png" alt="weather-app" />
+                  </div>
 
-                    <div class="folio-list__item-text">
-                      <div class="folio-list__item-cat">React JS</div>
-                      <div class="folio-list__item-title">Weather app</div>
-                    </div>
-                  </a>
-                  <a
-                    class="folio-list__proj-link"
-                    href="#"
-                    title="Weather app"
-                  >
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                        fill="currentColor"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </a>
-                </li>
-                <!--end folio-list__item -->
+                  <div class="folio-list__item-text">
+                    <div class="folio-list__item-cat">React JS</div>
+                    <div class="folio-list__item-title">Weather app</div>
+                  </div>
+                </a>
+                <a class="folio-list__proj-link" href="#" title="Weather app">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                      fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </li>
+              <!--end folio-list__item -->
 
-                <li class="folio-list__item column" data-animate-el>
-                  <a class="folio-list__item-link" href="#modal-03">
-                    <div class="folio-list__item-pic">
-                      <img
-                        src="images/portfolio/nimbus-hotel-screenshot.png"
-                        
-                        alt="nimbus hotel"
-                      />
-                    </div>
+              <li class="folio-list__item column" data-animate-el>
+                <a class="folio-list__item-link" href="#modal-03">
+                  <div class="folio-list__item-pic">
+                    <img src="images/portfolio/nimbus-hotel-screenshot.png" alt="nimbus hotel" />
+                  </div>
 
-                    <div class="folio-list__item-text">
-                      <div class="folio-list__item-cat">HTML, CSS</div>
-                      <div class="folio-list__item-title">Nimbus Hotel</div>
-                    </div>
-                  </a>
-                  <a
-                    class="folio-list__proj-link"
-                    href="#"
-                    title="project link"
-                  >
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                        fill="currentColor"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </a>
-                </li>
-                <!--end folio-list__item -->
+                  <div class="folio-list__item-text">
+                    <div class="folio-list__item-cat">HTML, CSS</div>
+                    <div class="folio-list__item-title">Nimbus Hotel</div>
+                  </div>
+                </a>
+                <a class="folio-list__proj-link" href="#" title="project link">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                      fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </li>
+              <!--end folio-list__item -->
 
-                <!-- <li class="folio-list__item column" data-animate-el>
+              <!-- <li class="folio-list__item column" data-animate-el>
                   <a class="folio-list__item-link" href="#modal-04">
                     <div class="folio-list__item-pic">
                       <img
@@ -361,137 +315,203 @@
                     </svg>
                   </a>
                 </li> -->
-                <!--end folio-list__item -->
+              <!--end folio-list__item -->
 
-                
-              </ul>
-              <!-- end folio-list -->
-            </div>
-            <!-- end column -->
 
-            <!-- Modal Templates Popup
+            </ul>
+            <!-- end folio-list -->
+          </div>
+          <!-- end column -->
+
+          <!-- Modal Templates Popup
                     -------------------------------------------- -->
-            <div id="modal-01" hidden>
-              <div class="modal-popup">
-                <header class="modal-popup__header modal-01__img">
-                    <div class="modal-popup__header-links">
-                      <a href="https://sergiu-d.github.io/movie-list" target="_blank" class="modal-popup__header-link">
-                        <div class="modal-popup__header-icons">
-                          <i class="fas fa-clipboard-list"></i>
-                          <i class="fas fa-link"></i>
-                        </div>
-                          Project
-                      </a>
-                    
-                      <a href="https://github.com/Sergiu-D/movie-list" target="_blank" class="modal-popup__header-link">
-                        <div class="modal-popup__header-icons">
-                          <i class="fab fa-github"></i>
-                          <i class="fas fa-link"></i>
-                        </div>
-                        Github
-                      </a>
-                    
+          <div id="modal-01" hidden>
+            <div class="modal-popup">
+              <header class="modal-popup__header modal-01__img">
+                <div class="modal-popup__header-links">
+                  <a href="https://sergiu-d.github.io/movie-list" target="_blank" class="modal-popup__header-link">
+                    <div class="modal-popup__header-icons">
+                      <i class="fas fa-clipboard-list"></i>
+                      <i class="fas fa-link"></i>
                     </div>
-                  
-                </header>
+                    Project
+                  </a>
 
-                <div class="modal-popup__desc">
-                  <h5>Retro Camera</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolorem dolorum, tempore temporibus earum suscipit natus reiciendis saepe consequuntur quae consectetur molestias eius ipsam unde velit architecto, illum pariatur laborum! Cumque aperiam, cupiditate possimus dignissimos maiores consequatur perferendis quibusdam porro quo accusantium repudiandae autem explicabo, iusto, debitis quas aspernatur ea voluptatibus dolore? Facilis recusandae hic consequuntur illum minus nostrum commodi, nisi blanditiis nesciunt cupiditate ipsa soluta dolores cum ratione quos voluptatibus dicta officia totam quam ab sed perferendis aperiam omnis. Iure omnis qui, modi earum quod at? Earum magni minima eaque ut dignissimos eum eveniet mollitia error, nulla quaerat repellat distinctio facere sint. Delectus et exercitationem hic alias, asperiores voluptatem dicta iste eos possimus beatae! Laborum voluptates unde expedita, ab reprehenderit inventore. Officia sequi accusamus consequatur eius quos a quidem, numquam nisi quo. Aliquid placeat facilis laboriosam incidunt similique eos eligendi soluta? At maxime animi reprehenderit assumenda, tenetur tempore. Facere perferendis consectetur nisi eligendi vitae eum cupiditate voluptatibus laboriosam esse in commodi, quia ullam atque accusantium ipsa ipsum numquam totam sed architecto, non mollitia sunt id aliquid! Ducimus iure ratione praesentium, voluptas quisquam est optio vero excepturi cum illo quis unde enim, animi delectus molestiae adipisci similique labore. Quidem non, quo sint a ipsa, voluptatibus distinctio delectus tempora magni temporibus quod accusamus quas quis? Aspernatur voluptates nam aut eum, optio voluptatibus eius iure minima molestiae. Itaque, vero repellat deleniti blanditiis nulla expedita officiis quidem reiciendis voluptate aperiam dignissimos suscipit recusandae sed excepturi ducimus nemo molestiae in quam illo, facere voluptas. Delectus minus quibusdam quae dolore deleniti! Maxime vel dolorum pariatur, quis quisquam eveniet cupiditate sunt provident ratione ab. Sequi consequuntur illo porro facere illum ipsa enim earum corrupti! Eaque quos odit sunt ab fugit nostrum nisi dolores assumenda, minus, quas sint distinctio, eligendi blanditiis voluptatem quasi? Suscipit ut in illum.
-                  </p>
+                  <a href="https://github.com/Sergiu-D/movie-list" target="_blank" class="modal-popup__header-link">
+                    <div class="modal-popup__header-icons">
+                      <i class="fab fa-github"></i>
+                      <i class="fas fa-link"></i>
+                    </div>
+                    Github
+                  </a>
 
-                  <ul class="modal-popup__cat">
-                    <li>Branding</li>
-                    <li>Product Design</li>
-                  </ul>
                 </div>
-               
-                
+
+              </header>
+
+              <div class="modal-popup__desc">
+                <header>
+                  <h5>Movie list</h5>
+                  <ul class="modal-popup__cat">
+                    <li>React JS</li>
+                    <li>Material UI</li>
+                  </ul>
+                </header>
+                <p>
+                  Movie list is an app that helps users to get informed about the latest movies and tv shows, look for a
+                  specific title
+                  or filter through hundreds of thousands of titles and save them for later.</br></br>
+
+                  The idea behind this project was to simplify the task of finding a movie or a TV show, by creating an
+                  easy-to-use UI
+                  and navigation.</br></br>
+
+
+                  The layout is split in 2 parts: </br>
+                <ul>
+                  <li>Navigation section</li>
+                  <li>Main section</li>
+                </ul>
+
+                The navigation section contains a search input and navigation. Using <b>react routes</b> I created 5
+                different routes,
+                making searching within reach and the user’s journey on the app easy and very clear on his
+                location.</br> </br>
+
+                Main section is where the information is shown. Titles are presented in card components informing the
+                user about the
+                score, title, genre and has the title’s poster as a background.
+                Trending and Newest routs, displays 20 titles by default with the possibility to fetch for more, once
+                the show more
+                button is pressed.
+                Upcoming and Discover, uses infinite scroll to fetch for more data as the use scrolls.
+                In Watch list, you can find the titles that you have saved. This was achieved by using <b>react
+                  context</b>.</br></br>
+
+                Once a title is selected, you will be taken to its page where you will find information like title,
+                genre, language,
+                release date, runtime and description of a movie. For tv shows you will get additional information, like
+                status if the
+                series is still airing, airing date when the series started and ended or when the next episode will air,
+                seasons how
+                many seasons it has, total episodes how many episodes.</br></br>
+                In bough movies and tv shoes, you can see a trailer video, check its cast and get some recommended
+                titles.
+
+                </p>
+              </div>
+
+
+            </div>
+          </div>
+          <!-- end modal -->
+
+          <div id="modal-02" hidden>
+            <div class="modal-popup">
+              <header class="modal-popup__header modal-02__img">
+                <div class="modal-popup__header-links">
+                  <a href="https://sergiu-d.github.io/weather-app" target="_blank" class="modal-popup__header-link">
+                    <div class="modal-popup__header-icons">
+                      <i class="fas fa-clipboard-list"></i>
+                      <i class="fas fa-link"></i>
+                    </div>
+                    Project
+                  </a>
+
+                  <a href="https://github.com/Sergiu-D/weather-app" target="_blank" class="modal-popup__header-link">
+                    <div class="modal-popup__header-icons">
+                      <i class="fab fa-github"></i>
+                      <i class="fas fa-link"></i>
+                    </div>
+                    Github
+                  </a>
+
+                </div>
+
+              </header>
+
+              <div class="modal-popup__desc">
+                <header>
+                  <h5>Weather app</h5>
+                  <ul class="modal-popup__cat">
+                    <li>React JS</li>
+                  </ul>
+                </header>
+                <p>
+                  Weather app helps users search a location or by using the browser location, get information about
+                  weather in their
+                  city and cities near them.</br></br>
+
+                  To build this application, <b>I used React js and CSS</b>. It uses <b>SWR hook</b> for fetching data
+                  and displays them
+                  in separated components like current weather, by week and by hour.</br></br>
+                  The current weather component is split in two, the local time and weather information like degrees, a
+                  description,
+                  feels like temperature and wind speed.</br>
+                  The week weather is presented as cards showing the day of the week, the date, description, day and
+                  night
+                  temperatures.</br></br>
+
+                  Hourly forecast is presented by a graph which shows the minimum and maximum temperatures in the span
+                  of 24 hours.
+                </p>
+
               </div>
             </div>
-            <!-- end modal -->
+          </div>
+          <!-- end modal -->
 
-            <div id="modal-02" hidden>
-              <div class="modal-popup">
-                <header class="modal-popup__header modal-02__img">
-                    <div class="modal-popup__header-links">
-                      <a href="https://sergiu-d.github.io/weather-app" target="_blank" class="modal-popup__header-link">
-                        <div class="modal-popup__header-icons">
-                          <i class="fas fa-clipboard-list"></i>
-                          <i class="fas fa-link"></i>
-                        </div>
-                        Project
-                      </a>
-                    
-                      <a href="https://github.com/Sergiu-D/weather-app" target="_blank" class="modal-popup__header-link">
-                        <div class="modal-popup__header-icons">
-                          <i class="fab fa-github"></i>
-                          <i class="fas fa-link"></i>
-                        </div> 
-                        Github
-                      </a>
-                    
+          <div id="modal-03" hidden>
+            <div class="modal-popup">
+              <header class="modal-popup__header modal-03__img">
+                <div class="modal-popup__header-links">
+                  <a href="https://sergiu-d.github.io/nimbus-hotel" target="_blank" class="modal-popup__header-link">
+                    <div class="modal-popup__header-icons">
+                      <i class="fas fa-clipboard-list"></i>
+                      <i class="fas fa-link"></i>
                     </div>
-                  
-                </header>
+                    Project link
+                  </a>
 
-                <div class="modal-popup__desc">
-                  <h5>The White Lamp</h5>
-                  <p>
-                    Proin gravida nibh vel velit auctor aliquet. Aenean
-                    sollicitudin, lorem quis bibendum auctor, nisi elit
-                    consequat ipsum, nec sagittis sem nibh id elit.
-                  </p>
-                  <ul class="modal-popup__cat">
-                    <li>Branding</li>
-                  </ul>
+                  <a href="https://github.com/Sergiu-D/nimbus-hotel" target="_blank" class="modal-popup__header-link">
+                    <div class="modal-popup__header-icons">
+                      <i class="fab fa-github"></i>
+                      <i class="fas fa-link"></i>
+                    </div>
+                    Github link
+                  </a>
+
                 </div>
+
+              </header>
+
+              <div class="modal-popup__desc">
+                <header>
+                  <h5>Nimbus hotel</h5>
+                  <ul class="modal-popup__cat">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </header>
+                <p>
+                  Nimbus hotel is a presentation website for an imaginary hotel, getting is guests familiar with their
+                  features, dishes,
+                  other guests testimonials, images from their rooms, beaches and ways to contact them.</br></br>
+
+                  The aim for this project was to advertise an imaginary hotel trough a simple but informative layout,
+                  using HTML, SASS
+                  and JavaScript.</br>
+                  Because responsiveness is very important, I used <b>flexbox and grid for the layout</b>.
+
+                </p>
+
               </div>
             </div>
-            <!-- end modal -->
+          </div>
+          <!-- end modal -->
 
-            <div id="modal-03" hidden>
-              <div class="modal-popup">
-                <header class="modal-popup__header modal-03__img">
-                    <div class="modal-popup__header-links">
-                      <a href="https://sergiu-d.github.io/nimbus-hotel" target="_blank" class="modal-popup__header-link"
-                    >
-                        <div class="modal-popup__header-icons">
-                          <i class="fas fa-clipboard-list"></i>
-                          <i class="fas fa-link"></i>
-                        </div>
-                        Project link
-                      </a>
-                    
-                      <a href="https://github.com/Sergiu-D/nimbus-hotel" target="_blank" class="modal-popup__header-link">
-                        <div class="modal-popup__header-icons">
-                          <i class="fab fa-github"></i>
-                          <i class="fas fa-link"></i>
-                        </div>
-                        Github link
-                      </a>
-                    
-                    </div>
-                  
-                </header>
-
-                <div class="modal-popup__desc">
-                  <h5>Rucksuck</h5>
-                  <p>
-                    Exercitationem reprehenderit quod explicabo consequatur
-                    aliquid ut magni ut. Deleniti quo corrupti illum velit
-                    eveniet ratione necessitatibus ipsam mollitia.
-                  </p>
-                  <ul class="modal-popup__cat">
-                    <li>Product Design</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- end modal -->
-
-            <!-- <div id="modal-04" hidden>
+          <!-- <div id="modal-04" hidden>
               <div class="modal-popup">
                 <header class="modal-popup__header modal-04__img">
                     <div class="modal-popup__header-links">
@@ -531,89 +551,75 @@
                 >
               </div>
             </div> -->
-            <!-- end modal -->
-          </div>
-          <!-- end works-portfolio -->
-        </section>
-        <!-- end s-works -->
+          <!-- end modal -->
+        </div>
+        <!-- end works-portfolio -->
+      </section>
+      <!-- end s-works -->
 
-        <!-- ### contact
+      <!-- ### contact
             ================================================== -->
-        <section id="contact" class="s-contact target-section">
-          <div class="row contact-top">
-            <div class="column lg-12">
-              <h2 class="text-pretitle">Get In Touch</h2>
+      <section id="contact" class="s-contact target-section">
+        <div class="row contact-top">
+          <div class="column lg-12">
+            <h2 class="text-pretitle">Get In Touch</h2>
 
-              <p class="h1">
-                I love to hear from you. Whether you have a question or just
-                want to chat about design, tech & art — shoot me a message.
-              </p>
-            </div>
-          </div>
-          <!-- end contact-top -->
-
-          <div class="row contact-bottom">
-            
-            <div class="column lg-4 md-12 contact-block">
-              <a
-                href="mailto:sergiu.dumitrescu1992@gmail.com"
-                class="mailtoui btn btn--medium u-fullwidth contact-btn"
-                >Say Hello.</a
-              >
-            </div>
-            <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
-              <h3 class="text-pretitle">Social</h3>
-              <ul class="contact-social">
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/sergiu-dumitrescu-225710160/"
-                    >LinkedIn</a
-                  >
-                </li>
-                <li><a href="https://github.com/Sergiu-D">Github</a></li>
-              </ul>
-            </div>
-          </div>
-          <!-- end contact-bottom -->
-        </section>
-        <!-- end contact -->
-      </main>
-      <!-- end s-content -->
-
-      <!-- ## footer
-        ================================================== -->
-      <footer class="s-footer">
-        <div class="row">
-          <div class="column ss-copyright">
-            <span
-              >Design by
-              <a href="https://www.styleshout.com/">StyleShout</a></span
-            >
-          </div>
-
-          <div class="ss-go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-              >
-                <path
-                  d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"
-                />
-              </svg>
-            </a>
+            <p class="h1">
+              I love to hear from you. Whether you have a question or just
+              want to chat about design, tech & art — shoot me a message.
+            </p>
           </div>
         </div>
-      </footer>
-      <!-- end s-footer -->
-    </div>
-    <!-- end -s-pagewrap -->
+        <!-- end contact-top -->
 
-    <!-- Java Script
+        <div class="row contact-bottom">
+
+          <div class="column lg-4 md-12 contact-block">
+            <a href="mailto:sergiu.dumitrescu1992@gmail.com"
+              class="mailtoui btn btn--medium u-fullwidth contact-btn">Say Hello.</a>
+          </div>
+          <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+            <h3 class="text-pretitle">Social</h3>
+            <ul class="contact-social">
+              <li>
+                <a href="https://www.linkedin.com/in/sergiu-dumitrescu-225710160/">LinkedIn</a>
+              </li>
+              <li><a href="https://github.com/Sergiu-D">Github</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- end contact-bottom -->
+      </section>
+      <!-- end contact -->
+    </main>
+    <!-- end s-content -->
+
+    <!-- ## footer
+        ================================================== -->
+    <footer class="s-footer">
+      <div class="row">
+        <div class="column ss-copyright">
+          <span>Design by
+            <a href="https://www.styleshout.com/">StyleShout</a></span>
+        </div>
+
+        <div class="ss-go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd">
+              <path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- end s-footer -->
+  </div>
+  <!-- end -s-pagewrap -->
+
+  <!-- Java Script
     ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

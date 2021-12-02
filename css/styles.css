@@ -3800,8 +3800,8 @@ img.u-pull-left {
 
 .modal-popup h5 {
   font-family: var(--font-1);
-  font-size: var(--text-size);
-  line-height: var(--vspace-1);
+  font-size: calc(var(--text-size) * 2);
+  line-height: var(--vspace-1_5);
   font-weight: 500;
   margin-top: 0;
   margin-bottom: var(--vspace-0_25);
@@ -3814,28 +3814,19 @@ img.u-pull-left {
   padding: 0 var(--vspace-1_25) var(--vspace-0_25);
 }
 
-.modal-popup__cat {
-  list-style: none;
-  margin-left: 0;
-  font-size: var(--text-sm);
-  line-height: var(--vspace-0_5);
-  color: rgba(0, 0, 0, 0.6);
-  padding-left: calc(0.875 * var(--space));
-  position: relative;
+.modal-popup__desc header {
+  margin: var(--vspace-1_5) 0;
+  text-align: center;
 }
 
-.modal-popup__cat::before {
-  content: "";
-  display: block;
-  height: calc(0.625 * var(--space));
-  width: calc(0.625 * var(--space));
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-image: url(../images/icons/icon-tag.svg);
-  position: absolute;
-  left: 0;
-  top: -0.15em;
+.modal-popup__cat {
+  list-style: none;
+  font-style: italic;
+  margin: 0;
+  font-size: calc(var(--text-size) * 1.25);
+  line-height: var(--vspace-0_5);
+  color: rgba(0, 0, 0, 0.6);
+  position: relative;
 }
 
 .modal-popup__cat li {
@@ -3856,7 +3847,6 @@ img.u-pull-left {
   background-position: top center !important;
   position: relative;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   min-height: 35vh;
@@ -3864,6 +3854,7 @@ img.u-pull-left {
 
 .modal-popup__header-links {
   display: flex;
+  gap: 2rem;
 }
 
 /* Modal project images */
@@ -3883,10 +3874,6 @@ img.u-pull-left {
 
 /* Modal links */
 
-.modal-popup__header-link:not(:last-of-type) {
-  margin-right: 2rem;
-}
-
 .modal-popup__header-link {
   display: flex;
   align-items: center;
@@ -3896,7 +3883,6 @@ img.u-pull-left {
   border-radius: 5px;
   box-shadow: 0 0 35px hsla(205, 0%, 0%, 1);
 
-  /* line-height: var(--vspace-1_25); */
   color: white;
 
   font-size: 2rem;
@@ -3953,11 +3939,6 @@ img.u-pull-left {
   box-shadow: 0 8px 10px hsla(205, 0%, 0%, 1);
 }
 
-/* .modal-popup__header-link i {
-  font-size: 2rem;
-  margin-right: 0.5rem;
-} */
-
 /* ------------------------------------------------------------------- 
  * ## testimonials
  * ------------------------------------------------------------------- */
@@ -3987,70 +3968,6 @@ img.u-pull-left {
   background: var(--color-1);
   opacity: 1;
 }
-
-/* ------------------------------------------------------------------- 
- * ## testimonial slider 
- * ------------------------------------------------------------------- */
-/* .testimonial-slider__slide {
-  position: relative;
-}
-
-.testimonial-slider__slide:hover .testimonial-slider__avatar {
-  filter: none;
-}
-
-.testimonial-slider__slide:hover .testimonial-slider__cite strong {
-  color: var(--color-1);
-}
-
-.testimonial-slider__slide:hover .testimonial-slider__cite span {
-  color: white;
-}
-
-.testimonial-slider__author {
-  display: inline-block;
-  min-height: var(--vspace-2);
-  margin-bottom: var(--vspace-0_5);
-  padding-left: var(--vspace-2_5);
-  position: relative;
-}
-
-.testimonial-slider__avatar {
-  width: var(--vspace-1_75);
-  height: var(--vspace-1_75);
-  border-radius: 100%;
-  outline: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  filter: grayscale(100%);
-  transition: all 0.3s ease-in-out;
-}
-
-.testimonial-slider__cite {
-  display: block;
-}
-
-.testimonial-slider__cite strong,
-.testimonial-slider__cite span {
-  font-style: normal;
-  transition: all 0.3s ease-in-out;
-}
-
-.testimonial-slider__cite strong {
-  font-size: calc(var(--text-size) * 0.8947);
-  font-weight: 400;
-  line-height: var(--vspace-0_75);
-  color: white;
-}
-
-.testimonial-slider__cite span {
-  display: block;
-  font-size: calc(var(--text-size) * 0.7368);
-  font-weight: 300;
-  line-height: var(--vspace-0_5);
-  color: var(--color-text-light);
-} */
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -4093,6 +4010,10 @@ img.u-pull-left {
 
   .folio-list__proj-link {
     right: var(--vspace-0_5);
+  }
+
+  .modal-popup__header-links {
+    flex-direction: column;
   }
 }
 
