@@ -3481,17 +3481,13 @@ img.u-pull-left {
   flex: 1 0 250px;
   max-width: 280px;
 
-  margin-top: 2rem;
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
   text-align: center;
-}
-
-.skill-card:not(:last-of-type) {
-  margin-right: 2rem;
 }
 
 .skill-card > i {
@@ -3592,9 +3588,9 @@ img.u-pull-left {
 }
 
 @media screen and (max-width: 400px) {
-  .about-timelines {
+  /* .about-timelines {
     --timeline-left-padding: var(--vspace-1);
-  }
+  } */
 }
 
 /* ===================================================================
